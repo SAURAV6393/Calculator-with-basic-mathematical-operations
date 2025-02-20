@@ -1,14 +1,42 @@
- 📊 Online Calculator – A simple web-based calculator for performing basic math operations: addition, subtraction, multiplication, and division. Built with HTML, CSS, and JavaScript.
+ 🧮 CalcPro – Advanced Web Calculator 🌟
+A sleek and powerful web-based calculator designed for performing basic and advanced mathematical operations. Built with HTML, CSS, and JavaScript, this calculator is perfect for quick calculations with a user-friendly interface and responsive design.
 
-🔹 Features:
-✔️ User-friendly interface
-✔️ Supports four basic operations (+, -, ×, ÷)
-✔️ Instant results display
-✔️ Responsive design for all devices
+🌟 Features
+✔️ Basic Operations: Supports +, -, ×, and ÷.
+✔️ Memory Functions: Includes M+, M-, MR, and MC for advanced calculations.
+✔️ History Display: Keeps track of your previous calculations.
+✔️ Backspace & Clear Entry: Easily correct mistakes with ⌫ and CE.
+✔️ Responsive Design: Works seamlessly on desktops, tablets, and mobile devices.
+✔️ Modern UI: Stylish gradient background and intuitive button layout.
 
-🚀 Live Demo: [Add link if available]
-💻 How to Use: Just enter numbers, select an operation, and get instant results!
+🚀 Live Demo
+👉 Click here to try the live demo! (Add your live demo link here)
 
-📂 Tech Stack: HTML, CSS, JavaScript
-📌 Contributions: Open to improvements & new features!
+🖥️ How to Use
+Enter Numbers: Click the number buttons (0-9) to input your values.
 
+Select Operation: Choose from +, -, ×, or ÷.
+
+Get Results: Press = to see the result instantly.
+
+Use Memory Functions:
+
+M+: Add the current value to memory.
+
+M-: Subtract the current value from memory.
+
+MR: Recall the value stored in memory.
+
+MC: Clear the memory.
+
+History: View your previous calculations above the display.
+
+🛠️ Tech Stack
+Frontend:
+HTML
+CSS
+JavaScript
+
+Tools:
+VS Code
+Git
