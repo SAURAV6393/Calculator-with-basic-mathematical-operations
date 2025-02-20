@@ -48,6 +48,6 @@ Tools:
 [![Git Badge](https://img.shields.io/badge/Git-%23F05032.svg?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
 
 🖼️ Screenshots
-### 🖥️ Desktop View
-![Desktop View]("C:\Users\saura\OneDrive\Desktop\m k.png")
+ 🖥️ Desktop View
+[Desktop View](C:\Users\saura\OneDrive\Desktop\m k.png)
 
