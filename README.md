@@ -32,12 +32,18 @@ MC: Clear the memory.
 History: View your previous calculations above the display.
 
 🛠️ Tech Stack
-Frontend:   
+Frontend: 
+
 [![HTML Badge](https://img.shields.io/badge/HTML-%23E34F26.svg?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
  
-CSS
-JavaScript
+[![CSS Badge](https://img.shields.io/badge/CSS-%231572B6.svg?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+[![JavaScript Badge](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 
 Tools:
-VS Code
-Git
+
+[![VS Code Badge](https://img.shields.io/badge/VS%20Code-007ACC.svg?style=flat&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
+
+[![Git Badge](https://img.shields.io/badge/Git-%23F05032.svg?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
+
