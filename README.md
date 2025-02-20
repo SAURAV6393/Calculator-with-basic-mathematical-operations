@@ -13,26 +13,26 @@ A sleek and powerful web-based calculator designed for performing basic and adva
 👉 Click here to try the live demo! (Add your live demo link here)
 
 🖥️ How to Use
-Enter Numbers: Click the number buttons (0-9) to input your values.
+1. Enter Numbers: Click the number buttons (0-9) to input your values.
 
-Select Operation: Choose from +, -, ×, or ÷.
+2. Select Operation: Choose from +, -, ×, or ÷.
 
-Get Results: Press = to see the result instantly.
+3. Get Results: Press = to see the result instantly.
 
-Use Memory Functions:
+4. Use Memory Functions:
 
-M+: Add the current value to memory.
+    M+: Add the current value to memory.
 
-M-: Subtract the current value from memory.
+    M-: Subtract the current value from memory.
 
-MR: Recall the value stored in memory.
+    MR: Recall the value stored in memory.
 
-MC: Clear the memory.
+    MC: Clear the memory.
 
-History: View your previous calculations above the display.
+5. History: View your previous calculations above the display.
 
 🛠️ Tech Stack
-Frontend: 
+ Frontend: 
 
 [![HTML Badge](https://img.shields.io/badge/HTML-%23E34F26.svg?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
  
@@ -46,4 +46,8 @@ Tools:
 [![VS Code Badge](https://img.shields.io/badge/VS%20Code-007ACC.svg?style=flat&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 
 [![Git Badge](https://img.shields.io/badge/Git-%23F05032.svg?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
+
+🖼️ Screenshots
+### 🖥️ Desktop View
+![Desktop View]("C:\Users\saura\OneDrive\Desktop\m k.png")
 
