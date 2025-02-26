@@ -1,65 +1,63 @@
 let memory = 0;
 let history = [];
 
-// Function to append value to the display
 function appendToDisplay(value) {
     const display = document.getElementById('display');
+    if (isOperator(display.value.slice(-1)) && isOperator(value)) {
+        return;
+    }
     display.value += value;
 }
 
-// Function to clear the entire display
-function clearDisplay() {
-    const display = document.getElementById('display');
-    display.value = '';
+function isOperator(char) {
+    return ['+', '-', '*', '/'].includes(char);
 }
 
-// Function to clear the last entry
+function clearDisplay() {
+    document.getElementById('display').value = '';
+}
+
 function clearEntry() {
     const display = document.getElementById('display');
     display.value = display.value.slice(0, -1);
 }
 
-// Function to remove the last character (backspace)
 function backspace() {
-    const display = document.getElementById('display');
-    display.value = display.value.slice(0, -1);
+    clearEntry();
 }
 
-// Function to calculate the result
 function calculateResult() {
     const display = document.getElementById('display');
-    try {
-        const result = eval(display.value);
-        history.push(`${display.value} = ${result}`);
-        updateHistory();
-        display.value = result;
-    } catch (error) {
+    let expression = display.value.trim();
+
+    if (expression === '' || isOperator(expression.slice(-1))) {
         display.value = 'Error';
+        triggerShakeAnimation(display);
+        return;
+    }
+
+    try {
+        const result = new Function(`return ${expression}`)();
+        const formattedResult = parseFloat(result.toFixed(10));
+
+        history.push(`${expression} = ${formattedResult}`);
+        updateHistory();
+        display.value = formattedResult;
+    } catch {
+        display.value = 'Error';
+        triggerShakeAnimation(display);
     }
 }
 
-// Memory Functions
-function memoryAdd() {
-    const display = document.getElementById('display');
-    memory += parseFloat(display.value) || 0;
+function triggerShakeAnimation(element) {
+    element.classList.add('shake');
+    setTimeout(() => element.classList.remove('shake'), 500);
 }
 
-function memorySubtract() {
-    const display = document.getElementById('display');
-    memory -= parseFloat(display.value) || 0;
-}
-
-function memoryRecall() {
-    const display = document.getElementById('display');
-    display.value = memory;
-}
-
-function memoryClear() {
-    memory = 0;
-}
-
-// Update History
 function updateHistory() {
-    const historyElement = document.getElementById('history');
-    historyElement.innerHTML = history.join('<br>');
+    document.getElementById('history').innerHTML = history.map(entry => `<p>${entry}</p>`).join('');
 }
+
+function memoryAdd() { memory += parseFloat(document.getElementById('display').value) || 0; }
+function memorySubtract() { memory -= parseFloat(document.getElementById('display').value) || 0; }
+function memoryClear() { memory = 0; }
